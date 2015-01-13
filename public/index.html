@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="author" content="Gregory LINFORD">
+  <title>Color MemoryGame</title>
+  <link rel="stylesheet" href="css/color-memory-game.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      <div class="container">
+        <div id="color-memory-game"></div>
+        <div class="right-sidebar">
+            <div class="logo">
+                <img src="/img/logo.png" alt="Color MemoryGame Logo">
+            </div>
+            <div class="game-info">
+                <div class="score-block">
+                    <span class="score-title">Score:
+                        <span id="score-count">0</span>
+                    </span>
+                </div>
+                <div class="score-block">
+                    <span class="score-title">Tries:
+                        <span id="user-tries">0</span>
+                    </span>
+                </div>
+            </div>
+            <div id="highscores" class="highscores">
+                <span class="score-title">Highscores</span>
+            </div>
+
+            <div class="restart-block">
+                <button id="restart-button" class="color-game-button">Start Over</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/color-memory-game.js"></script>
+  <script>
+    (function(){
+      var thegame = new MemoryGame();
+    })();
+  </script>
+</body>
+</html>
