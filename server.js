@@ -6,7 +6,7 @@ var compression = require('compression')
 var path = require('path');
 var fs = require('fs');
 
-var mongoUri = 'mongodb://localhost/db/';
+var mongoUri = 'mongodb://secure-temple-4354.herokuapp.com/db/';
 mongoose.connect(mongoUri);
 var db = mongoose.connection;
 db.on('error', function () {
